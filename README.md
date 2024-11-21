@@ -30,9 +30,25 @@ This repository is a source for vulnerable wordpress plugins. It can be used for
 - **Active Installations**: 200,000
 
 ### social-warfare (3.5.2)
-- **CVE**: [CVE-2019-9978](https://www.cve.org/CVERecord?id=CVE-2019-9978)
+- **CVE**: [CVE-2019-9978](https://www.cve.org/CVERecord?id=CVE-2019-9978) (XSS)
 - **CVSS**:	7.2 (High)
 - **Publicly Published**: March 21, 2019
 - **Last Updated**:	January 22, 2024
 - **Researcher**: [Andrew Wilder](https://www.wordfence.com/threat-intel/vulnerabilities/researchers/andrew-wilder)
 - **Active Installations**: 20,000
+
+### bookingpress-appointment-booking (1.1.7)
+- **CVE**: [CVE-2024-7350](https://www.cve.org/CVERecord?id=CVE-2024-7350) (Authentication Bypass)
+- **CVSS**:	9.8 (Critical)
+- **Publicly Published**: August 7, 2024
+- **Last Updated**:	August 8, 2024
+- **Researcher**: [Gibran Abdillah](https://www.wordfence.com/threat-intel/vulnerabilities/researchers/gibran-abdillah)
+- **Active Installations**: 20,000
+
+### extensions-for-cf7 (3.0.6)
+- **CVE**: [CVE-2024-29102](https://www.cve.org/CVERecord?id=CVE-2024-29102) (XSS)
+- **CVSS**:	7.2 (High)
+- **Publicly Published**: March 15, 2024
+- **Last Updated**:	March 20, 2024
+- **Researcher**: [RE-ALTER](https://www.wordfence.com/threat-intel/vulnerabilities/researchers/vladislav-pokrovsky)
+- **Active Installations**: 6,000
