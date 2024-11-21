@@ -4,6 +4,14 @@ This repository is a source for vulnerable wordpress plugins. It can be used for
 
 ## List of Plugins
 
+### essential-addons-for-elementor-lite (5.8.15)
+- **CVE**: [CVE-2024-5612](https://www.cve.org/CVERecord?id=CVE-2024-5612) (XSS)
+- **CVSS**: 6.4 (Medium)
+- **Publicly Published**: June 6, 2024
+- **Last Updated**: June 7, 2024
+- **Researcher**: [wesley (wcraft)](https://www.wordfence.com/threat-intel/vulnerabilities/researchers/wesley-jhon)
+- **Active Installations**: 2,000,000
+
 ### all-in-one-wp-security-and-firewall (5.1.0)
 
 - **CVE**: [CVE-2022-44737](https://www.cve.org/CVERecord?id=CVE-2022-44737) (CSRF)
@@ -12,14 +20,6 @@ This repository is a source for vulnerable wordpress plugins. It can be used for
 - **Last Updated**: January 22, 2024
 - **Researcher**: [Rafie Muhammad - Patchstack](https://www.wordfence.com/threat-intel/vulnerabilities/researchers/rafie-muhammad)
 - **Active Installations**: 1,000,000
-
-### essential-addons-for-elementor-lite (5.8.15)
-- **CVE**: [CVE-2024-5612](https://www.cve.org/CVERecord?id=CVE-2024-5612) (XSS)
-- **CVSS**: 6.4 (Medium)
-- **Publicly Published**: June 6, 2024
-- **Last Updated**: June 7, 2024
-- **Researcher**: [wesley (wcraft)](https://www.wordfence.com/threat-intel/vulnerabilities/researchers/wesley-jhon)
-- **Active Installations**: 2,000,000
 
 ### iwp-client (1.9.4.4)
 - **CVE**: [CVE-2020-8772](https://www.cve.org/CVERecord?id=CVE-2020-8772) (Authentication Bypass)
