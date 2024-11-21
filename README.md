@@ -29,14 +29,6 @@ This repository is a source for vulnerable wordpress plugins. It can be used for
 - **Researcher**: [WebARX Security - WebARX Security](https://www.wordfence.com/threat-intel/vulnerabilities/researchers/webarx-security)
 - **Active Installations**: 200,000
 
-### wp-file-upload (4.12.2)
-- **CVE**: [CVE-2020-10564](https://www.cve.org/CVERecord?id=CVE-2020-10564) (Path Traversal)
-- **CVSS**:	9.8 (Critical)
-- **Publicly Published**: March 13, 2020
-- **Last Updated**:	June 17, 2024
-- **Researcher**: [riccardo krauter (p4w)](https://www.wordfence.com/threat-intel/vulnerabilities/researchers/riccardo-krauter-p4w)
-- **Active Installations**: 20,000
-
 ### social-warfare (3.5.2)
 - **CVE**: [CVE-2019-9978](https://www.cve.org/CVERecord?id=CVE-2019-9978)
 - **CVSS**:	7.2 (High)
