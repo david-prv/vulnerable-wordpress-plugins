@@ -4,6 +4,24 @@ This repository is a source for vulnerable wordpress plugins. It can be used for
 
 ## List of Plugins
 
+*List is sorted by their number of active installations.*
+
+### woocommerce (6.2.0)
+- **CVE**: [CVE-2022-0775](https://www.cve.org/CVERecord?id=CVE-2022-0775) (Improper Authorization)
+- **CVSS**:	5.4 (Medium)
+- **Publicly Published**: February 22, 2022
+- **Last Updated**:	February 6, 2024
+- **Researcher**: [Krzysztof Zając - CERT PL](https://www.wordfence.com/threat-intel/vulnerabilities/researchers/krzysztof-zajac)
+- **Active Installations**: 8,000,000
+
+### litespeed-cache (6.2.0.1)
+- **CVE**: [CVE-2024-3246](https://www.cve.org/CVERecord?id=CVE-2024-3246) (CSRF)
+- **CVSS**:	6.1 (Medium)
+- **Publicly Published**: July 23, 2024
+- **Last Updated**:	July 24, 2024
+- **Researcher**: [Krzysztof Zając - CERT PL](https://www.wordfence.com/threat-intel/vulnerabilities/researchers/krzysztof-zajac)
+- **Active Installations**: 6,000,000
+
 ### essential-addons-for-elementor-lite (5.8.15)
 - **CVE**: [CVE-2024-5612](https://www.cve.org/CVERecord?id=CVE-2024-5612) (XSS)
 - **CVSS**: 6.4 (Medium)
