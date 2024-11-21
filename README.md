@@ -47,6 +47,22 @@ This repository is a source for vulnerable wordpress plugins. It can be used for
 - **Researcher**: [WebARX Security - WebARX Security](https://www.wordfence.com/threat-intel/vulnerabilities/researchers/webarx-security)
 - **Active Installations**: 200,000
 
+### iubenda-cookie-law-solution (3.3.2)
+- **CVE**: [CVE-2022-3911](https://www.cve.org/CVERecord?id=CVE-2022-3911) (Missing Authoriztaion)
+- **CVSS**:	8.8 (High)
+- **Publicly Published**: December 12, 2022
+- **Last Updated**:	February 2, 2023
+- **Researcher**: [Krzysztof Zając - CERT PL](https://www.wordfence.com/threat-intel/vulnerabilities/researchers/krzysztof-zajac)
+- **Active Installations**: 100,000
+
+### wp-clone-by-wp-academy (2.4.6)
+- **CVE**: [CVE-2024-10913](https://www.cve.org/CVERecord?id=CVE-2024-10913) (Object Injection)
+- **CVSS**:	8.8 (High)
+- **Publicly Published**: November 19, 2024
+- **Last Updated**:	November 20, 2024
+- **Researcher**: [Webbernaut](https://www.wordfence.com/threat-intel/vulnerabilities/researchers/webbernaut)
+- **Active Installations**: 70,000
+
 ### social-warfare (3.5.2)
 - **CVE**: [CVE-2019-9978](https://www.cve.org/CVERecord?id=CVE-2019-9978) (XSS)
 - **CVSS**:	7.2 (High)
