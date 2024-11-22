@@ -31,12 +31,19 @@ This repository is a source for vulnerable wordpress plugins. It can be used for
 - **Active Installations**: 2,000,000
 
 ### all-in-one-wp-security-and-firewall (5.1.0)
-
 - **CVE**: [CVE-2022-44737](https://www.cve.org/CVERecord?id=CVE-2022-44737) (CSRF)
 - **CVSS**: 8.8 (High)
 - **Publicly Published**: November 22, 2022
 - **Last Updated**: January 22, 2024
 - **Researcher**: [Rafie Muhammad - Patchstack](https://www.wordfence.com/threat-intel/vulnerabilities/researchers/rafie-muhammad)
+- **Active Installations**: 1,000,000
+
+### complianz-gdpr (6.5.6)
+- **CVE**: [CVE-2024-1592](https://www.cve.org/CVERecord?id=CVE-2024-1592) (XSS)
+- **CVSS**:	4.3 (Medium)
+- **Publicly Published**: March 1, 2024
+- **Last Updated**:	March 2, 2024
+- **Researcher**: [Krzysztof Zając - CERT PL](https://www.wordfence.com/threat-intel/vulnerabilities/researchers/krzysztof-zajac)
 - **Active Installations**: 1,000,000
 
 ### iwp-client (1.9.4.4)
@@ -46,6 +53,14 @@ This repository is a source for vulnerable wordpress plugins. It can be used for
 - **Last Updated**:	January 10, 2023
 - **Researcher**: [WebARX Security - WebARX Security](https://www.wordfence.com/threat-intel/vulnerabilities/researchers/webarx-security)
 - **Active Installations**: 200,000
+
+### give (3.16.1)
+- **CVE**: [CVE-2024-8353](https://www.cve.org/CVERecord?id=CVE-2024-8353) (Object Injection)
+- **CVSS**:	10.0 (Critical)
+- **Publicly Published**: September 27, 2024
+- **Last Updated**:	September 28, 2024
+- **Researcher**: [cuokon](https://www.wordfence.com/threat-intel/vulnerabilities/researchers/cuokon)
+- **Active Installations**: 100,000
 
 ### iubenda-cookie-law-solution (3.3.2)
 - **CVE**: [CVE-2022-3911](https://www.cve.org/CVERecord?id=CVE-2022-3911) (Missing Authoriztaion)
