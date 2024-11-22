@@ -1,6 +1,13 @@
-# Collection of Vulnerable WordPress Plugins (CVWP)
+<p align="center">
+ <img src="cvwp-logo.png" alt="CVWP Logo" width="150">
+</p>
 
+<h1 align="center">
+ Collection of Vulnerable WordPress Plugins (CVWP)
+</h1>
+<p align="center">
 This repository is a source for vulnerable wordpress plugins. It can be used for evaluating security testing techniques in the realm of websec, and it's especially intended for fuzzer evaluations.
+</p>
 
 ## Installation
 
