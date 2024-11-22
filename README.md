@@ -2,6 +2,54 @@
 
 This repository is a source for vulnerable wordpress plugins. It can be used for evaluating security testing techniques in the realm of websec, and it's especially intended for fuzzer evaluations.
 
+## Installation
+
+In this section, you will learn how to setup a vulnerable WordPress 6.7.1 instance. Please **don't expose this** to the internet!
+The website will contain several critial vulnerabilities! You are responsible for your own actions.
+
+#### Preparation
+
+Please install [WP-CLI](https://wp-cli.org/) on your machine. You can find detailed installation instructions [here](https://wp-cli.org/#installation).
+The advanced usage is well-documented on [developer.wordpress.org](https://developer.wordpress.org/cli/commands/).
+
+#### Step 1: Download WordPress Core
+```bash
+wp core download --path=/var/www/html --version=6.7.1 --locale=en_US
+```
+
+#### Step 2: Setup Configuration
+```bash
+wp config create \
+    --dbname=your_db_name \
+    --dbuser=your_db_user \
+    --prompt=dbpass
+```
+
+#### Step 3: Create Database
+```bash
+wp db create
+```
+
+#### Step 4: Install WordPress
+```bash
+wp core install \
+    --url=wordpress.local \
+    --title="Vulnerable WordPress" \
+    --admin_user=admin \
+    --admin_password=admin \
+    --admin_email=webmaster@wordpress.local
+```
+
+#### Step 5: Install CVWP
+```bash
+git clone https://github.com/david-prv/vulnerable-wordpress-plugins -b main /var/www/html/wp-content/plugins
+```
+
+#### Step 6: Activate Plugins
+```bash
+wp plugin activate --all
+```
+
 ## List of Plugins
 
 *List is sorted by their number of active installations.*
