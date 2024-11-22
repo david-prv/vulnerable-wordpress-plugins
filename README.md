@@ -63,7 +63,7 @@ This repository is a source for vulnerable wordpress plugins. It can be used for
 - **Active Installations**: 100,000
 
 ### iubenda-cookie-law-solution (3.3.2)
-- **CVE**: [CVE-2022-3911](https://www.cve.org/CVERecord?id=CVE-2022-3911) (Missing Authoriztaion)
+- **CVE**: [CVE-2022-3911](https://www.cve.org/CVERecord?id=CVE-2022-3911) (Missing Authorization)
 - **CVSS**:	8.8 (High)
 - **Publicly Published**: December 12, 2022
 - **Last Updated**:	February 2, 2023
