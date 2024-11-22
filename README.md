@@ -9,8 +9,6 @@
 This repository is a source for vulnerable wordpress plugins. It can be used for evaluating security testing techniques in the realm of websec, and it's especially intended for fuzzer evaluations.
 </p>
 
----
-
 ## Installation
 
 In this section, you will learn how to setup a vulnerable WordPress 6.7.1 instance. Please **don't expose this** to the internet!
