@@ -16,7 +16,7 @@ The website will contain several critial vulnerabilities! You are responsible fo
 
 #### Preparation
 
-Please install [WP-CLI](https://wp-cli.org/) on your machine. You can find detailed installation instructions [here](https://wp-cli.org/#installation).
+Please install [WP-CLI](https://wp-cli.org/) on your machine. You can find detailed installation instructions [here](https://wp-cli.org/#installing).
 The advanced usage is well-documented on [developer.wordpress.org](https://developer.wordpress.org/cli/commands/).
 
 #### Step 1: Download WordPress Core
