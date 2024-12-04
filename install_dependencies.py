@@ -11,17 +11,19 @@ DEPENDENCY_MAP: dict[str, str] = {
     "gutenberg": "gutenberg"
 }
 
-def run_wp_cli_command(command: str) -> None:
+def run_wp_cli_command(command: str) -> bool:
     """ Function that runs a WP-CLI command and reports errors. """
     try:
         subprocess.run(command, check=True, text=True)
+        return True
     except Exception as e:
         print(f"[!] Error while running command: {' '.join(command)}\n     => {e}")
+        return False
 
-def install_plugin(plugin_slug: str) -> None:
+def install_plugin(plugin_slug: str) -> bool:
     """ Auxiliary function that installs a plugin if confirmed. """
     print(f"[+] Installing plugin: {plugin_slug}")
-    run_wp_cli_command(["wp", "plugin", "install", plugin_slug, "--activate"])
+    return run_wp_cli_command(["wp", "plugin", "install", plugin_slug, "--activate"])
 
 def main(repository_path: str, skip_confirmation: bool) -> None:
     if not os.path.isdir(repository_path):
@@ -29,6 +31,7 @@ def main(repository_path: str, skip_confirmation: bool) -> None:
         return
 
     installed_dependencies = set()
+    failing_dependencies = set()
 
     for plugin_folder in os.listdir(repository_path):
         plugin_slug = plugin_folder.lower()
@@ -42,10 +45,19 @@ def main(repository_path: str, skip_confirmation: bool) -> None:
                     if confirmation.lower() != "y" and confirmation.lower() != "yes":
                         continue
 
-                install_plugin(dependency)
-                installed_dependencies.add(dependency)
+                if install_plugin(dependency):
+                    installed_dependencies.add(dependency)
+                    continue
 
-    print("[+] Finished.")
+                failing_dependencies.add(dependency)
+
+    print(f"[+] Finished. {len(failing_dependencies)} errors occurred.")
+
+    if len(failing_dependencies) > 0:
+        print("[!] The following dependencies caused an error:")
+        print(failing_dependencies)
+    
+    exit(0)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Install plugin dependencies for CVWP.")
