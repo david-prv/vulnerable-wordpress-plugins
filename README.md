@@ -52,10 +52,17 @@ wp core install \
 git clone https://github.com/david-prv/vulnerable-wordpress-plugins -b main /var/www/html/wp-content/plugins
 ```
 
-#### Step 6: Activate Plugins
+#### Step 6: Run Installer
+```bash
+python3 install_dependencies.py --yes /var/www/html/wp-content/plugins
+```
+
+#### Step 7: Activate Plugins
 ```bash
 wp plugin activate --all
 ```
+
+That's it, you're done!
 
 ## List of Plugins
 
