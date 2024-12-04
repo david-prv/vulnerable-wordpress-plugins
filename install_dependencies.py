@@ -34,7 +34,7 @@ def main(repository_path: str, skip_confirmation: bool) -> None:
         plugin_slug = plugin_folder.lower()
 
         for keyword, dependency in DEPENDENCY_MAP.items():
-            if keyword in plugin_slug and dependency not in installed_dependencies:
+            if keyword in plugin_slug and keyword != plugin_slug and dependency not in installed_dependencies:
                 print(f"[+] Detected dependency for {plugin_folder}: {dependency}")
 
                 if not skip_confirmation:
