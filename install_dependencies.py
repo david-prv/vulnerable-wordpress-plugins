@@ -40,7 +40,7 @@ def main(repository_path: str, skip_confirmation: bool, dump_results: bool) -> N
             if keyword in plugin_slug and keyword != plugin_slug and dependency not in installed_dependencies:
                 print(f"[+] Detected dependency for {plugin_folder}: {dependency}")
 
-                if not skip_confirmation:
+                if (not skip_confirmation) and (not dump_results):
                     confirmation = input("[+] Do you want to proceed? (Y/n) ")
                     if confirmation.lower() != "y" and confirmation.lower() != "yes":
                         continue
